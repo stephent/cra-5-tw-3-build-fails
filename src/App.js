@@ -17,7 +17,7 @@ function App() {
         <BuildFail />
 
         <div className='mt-4'>
-          <p>To fix the build problem, delete <code>bg-white</code> from line 2 of <code>./styles/custom.css</code> and re-run the build command.</p>
+          <p>To fix the build problem, downgrade <code>postcss</code> version to <code>8.4.5</code></p>
         </div>
 
       </header>
