@@ -1,10 +1,12 @@
 # Bug Reproduction
 
-This project reproduce the bug reported in https://github.com/tailwindlabs/tailwindcss/issues/7687.
+This project reproduce the bug reported in https://github.com/postcss/postcss/issues/1724.
 
 To reproduce, install the dependencies and attempt to build the project using `npm run build`. 
 
 The project fails to build successfully until the css is edited as follows. The file `./styles/custom.css` includes a single class, `.my-class`. Edit line 2 and delete the applied rule `bg-white`. The project will build successfully.
+
+Alternatively, downgrade postcss to 8.4.5 and the project builds successfully without needing to modify the CSS.
 
 ## Getting Started with Create React App
 
